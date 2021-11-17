@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type='text/css' rel='stylesheet' href='static/css/style.css'>
+    <script defer src="static/js/app.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#">
+                <img class="nav-logo" src='static/img/logo.svg'>
+            </a>
+            
+
+            <span class="nav-icon">
+                <img class="icon-open" src="static/img/icon-menu.svg" alt="open menu bar">
+                <img class="icon-close" src="static/img/icon-close.svg" alt="close menu icon">
+            </span>
+
+            <nav class="navbar">
+                <ul class="nav-list" >
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+  
+
+        
+                <div class="nav-right">
+                    <div class='dropdown'>
+
+                        <a href="" class='shopping-cart-btn'>
+                            <span class='badge'>1</span>
+                            <img class='shopping-cart' src="static/img/icon-cart.svg" aria-hidden="true">
+                        </a>
+
+                        <div class='cart-card'>
+                            <!-- <div class='cart-detials'> -->
+                            <h1 class='cart-header'>Cart</h1>
+                            <div class="empty">Your cart is empty</div>
+                            
+                            <div class='cart-content'>
+                                <div class='inner-cart-card'>
+                                    <img class='checkout-img' src='static/img/image-product-1-thumbnail.jpg' alt='Checkout Image'>
+                                    <div class='ctxt'>
+                                        <h2 class='chkout-item'>Fall maani Limited sneakers</h2>
+                                        <p class="chkt-price">ssssss</p>
+                                        <span class='chkout-times'>x</span>
+                                        <p class="chkt-price2">sssss</p>
+                                        
+                                        
+                                        <span class='total-chkt'>$375</span>
+                                    </div>
+                                    <img class='del' src='static/img/icon-delete.svg'>
+                                </div>
+                                <button class=" btn-checkout">Checkout</button>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                  
+                </div>
+
+                    <a href="">
+                        <img class="profile-icon" src="static/img/image-avatar.png" aria-hidden="true">
+                    </a>
+                </div>
+        </header>
+
+        <section class='hero'>
+<!-- 
+            <div class='active-modal'>
+                <img id='popModal' src="">
+                
+              
+
+                <div id='modal'>
+                    <img id='modalImg' src='' >
+
+                    <img id='prevIcon' class='icon'  src='static/img/icon-previous.svg'>
+                    <img id='nextIcon' class='icon' src='static/img/icon-next.svg'>
+
+                </div>
+            </div> -->
+
+
+            <div class='light-box'>
+                <img id='lightImg' src='static/img//image-product-1-thumbnail.jpg'>
+
+                <div class='img-subs'>
+                    <img id='light' class='light-modal'  src="static/img/image-product-1.jpg" draggable="false" alt="">
+                    <img id='light' class='light-modal'  src="static/img/image-product-2.jpg" draggable="false" alt="">
+                    <img id='light' class='light-modal'  src="static/img/image-product-3.jpg" draggable="false" alt="">
+                    <img id='light' class='light-modal'  src="static/img/image-product-4.jpg" draggable="false" alt="">
+                </div>
+
+                <div id='modal' class='zoom'>
+                    <img id='modalImg' src='static/img//image-product-1-thumbnail.jpg' >
+
+                    <div class='img-pop'>
+                        <img class='pop-modal' src="static/img/image-product-1.jpg" draggable='false' alt="">
+                        <img class='pop-modal' src="static/img/image-product-2.jpg" draggable='false' alt="">
+                        <img class='pop-modal' src="static/img/image-product-3.jpg" draggable='false' alt="">
+                        <img class='pop-modal' src="static/img/image-product-4.jpg" draggable='false' alt="">
+                        
+                    </div>
+
+                    <div class='all-icons'>
+                        <img class='pop-close' src="static/img/icon-close.svg">
+                        <img id='prevIcon' class='pop-icon'  src='static/img/icon-previous.svg'>
+                        <img id='nextIcon' class='pop-icon' src='static/img/icon-next.svg'>
+                    </div>
+                </div>
+                <div class='all-icons'>
+                    <img id='prevIcon' class='icon'  src='static/img/icon-previous.svg'>
+                    <img id='nextIcon' class='icon' src='static/img/icon-next.svg'>
+                </div>
+               
+
+            </div>
+
+
+          
+
+            <div class='product-details'>
+                <p class='company-name'>SNEAKER COMPANY</p>
+                <h1>Fall Limited Sneakers</h1>
+                <p class="item-details">These low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber outer sole, they'll withstand
+                    everything the weather can offer.
+                </p>
+                <div id="price" class='price-tag'>
+                    <span class='amount'>$125.00</span>
+                    <span class="discount">50%</span>
+                    <div clsss='discount-rmvd'>
+                        <p class="text-strike">$250.00</p>
+                    </div>
+                </div>
+
+                <div class='add-to-cart'>
+                    <div class='product-quantity'>
+                        <!-- <a  id='sub'> -->
+                            <img class='sub-count' src="static/img/icon-minus.svg" alt='Remove prosuct'>
+                        <!-- </a> -->
+                        <span class='product-count'></span>
+                        <img class="add-count" src="static/img/icon-plus.svg" alt='Add prosuct'>
+                    </div>
+
+                    <button class="btn"><img src="static/img/icon-cart.svg"> Add to cart</button>
+                </div>
+            </div>
+        </section">
+      
+    </main>
+
+</body>
+</html>
