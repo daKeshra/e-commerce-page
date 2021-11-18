@@ -1,11 +1,12 @@
 (function () {
   count = 0;
-  const modalBox = document.querySelector("#modal"); //Popup div conatiner
 
   //Select DOM elements
+  const shoppingCart = document.querySelector(".shopping-cart");
+  const cartCard = document.querySelector(".cart-card");
+  const modalBox = document.querySelector("#modal"); //Popup div conatiner
   const addCount = document.querySelector(".add-count");
   const subCount = document.querySelector(".sub-count");
-  const sub = document.getElementById("sub");
   const countBadge = document.querySelector(".badge");
   const emptyDiv = document.querySelector(".empty");
   const navCartContent = document.querySelector(".cart-content");
@@ -15,10 +16,15 @@
   const checkOutCount = document.querySelector(".chkt-count");
   const checkOutTotal = document.querySelector(".total-chkt");
   ////
-  productCount.innerHTML = parseInt(count);
   // amount = `$${amount}.00`;
+  productCount.innerHTML = parseInt(count);
+  //on .nav shopping cart cion click
+  shoppingCart.addEventListener("click", function () {
+    cartCard.style.display = "block";
+  });
+
   //increment count and maneuve cart box that displays
-  //on .nav shopping cart icon hover
+  //plus icon click
   addCount.addEventListener("click", function () {
     count++;
     productCount.innerHTML = count;
@@ -97,11 +103,11 @@
       for (let i = 0; i < c - 1; i++) {
         // modalImg.src = popModalImg[count].src;
         // count++;
-        console.log(c);
+        // console.log(c);
         // if (popModalImg.length >= c + 1) {
         modalImg.src = popModalImg[i].src;
         c--;
-        console.log(i);
+        // console.log(i);
         // }
       }
     });
@@ -138,9 +144,6 @@
 
     cartBtn.addEventListener("click", function () {
       result = parseFloat(amount) * 2;
-      // document.querySelector(".text-strike").innerHTML = "$" + result + ".00";
-      console.log(result);
-      // console.log(priceSlash);
     });
     //Close the lightbox
     closeModal.addEventListener("click", function () {
